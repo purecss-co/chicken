@@ -34,283 +34,278 @@ body {
   }
 }
 
-.chicken {
-  width: 55vmin;
-  height: 64vmin;
-
-  .comb {
-    &-1 {
-      z-index: 3;
-      width: 10.2vmin;
-      height: 10vmin;
-      background: $red-shadow-color;
-      top: -48.5vmin;
-      left: -26vmin;
-      transform: rotate(-25deg);
-      border-radius: 60% 50% 0 0;
-      box-shadow: 0 0 0 1vmin $outline-color,
-        inset 2.1vmin 1.3vmin 0 0.5vmin $red-color;
-
-      &::before {
-        width: 3vmin;
-        height: 3vmin;
-        background: $red-shadow-color;
-        top: 6.7vmin;
-        left: 9vmin;
-        transform: rotate(35deg);
-      }
-
-      &::after {
-        width: 1.5vmin;
-        height: 1.6vmin;
-        background: $red-color;
-        top: 5.5vmin;
-        left: 10.3vmin;
-        transform: rotate(-25deg);
-        border-radius: 0 0 0 100%;
-      }
-    }
-
-    &-2 {
-      z-index: 2;
-      width: 9.2vmin;
-      height: 7.5vmin;
-      background: $red-shadow-color;
-      top: -50vmin;
-      left: -6.5vmin;
-      border-radius: 5vmin 5vmin 0 0;
-      box-shadow: 0 0 0 1vmin $outline-color;
-      overflow: hidden;
-
-      &::before {
-        width: 2vmin;
-        height: 3.2vmin;
-        background: $red-color;
-        left: 1.3vmin;
-        transform: rotate(50deg);
-      }
-
-      &::after {
-        width: 2vmin;
-        height: 4vmin;
-        background: $red-color;
-        top: -1.8vmin;
-        left: 3.7vmin;
-        transform: rotate(70deg);
-      }
-    }
-
-    &-3 {
-      z-index: 3;
-      width: 9vmin;
-      height: 10vmin;
-      background: $red-shadow-color;
-      top: -38vmin;
-      left: 8.8vmin;
-      border-radius: 5vmin 100% 0 0;
-      box-shadow: 0 0 0 1vmin $outline-color;
-
-      &::before {
-        width: 4vmin;
-        height: 4vmin;
-        background: $red-shadow-color;
-        top: -1.2vmin;
-        left: -2.35vmin;
-        transform: rotate(-5deg);
-        border-radius: 0 0.5vmin 0 0;
-      }
-    }
-  }
-
-  .tail {
-    &-1 {
-      z-index: 3;
-      width: 14vmin;
-      height: 7.5vmin;
-      background: $red-shadow-color;
-      top: 5.2vmin;
-      left: 36.4vmin;
-      border-radius: 0 3vmin 100% 0;
-      box-shadow: 0 0.1vmin 0 1.1vmin $outline-color,
-        inset -0.7vmin 1vmin 0 0.2vmin $red-color;
-
-      &::before {
-        width: 5vmin;
-        height: 2.5vmin;
-        background: $red-shadow-color;
-        top: 7.15vmin;
-        left: 3vmin;
-        transform: rotate(-5deg);
-      }
-
-      &::after {
-        width: 1.2vmin;
-        height: 1.2vmin;
-        background: $outline-color;
-        top: 7.1vmin;
-        left: 7.4vmin;
-        border-radius: 50%;
-        box-shadow: 0.5vmin -0.15vmin 0 0.01vmin $outline-color,
-          0.4vmin 0.9vmin 0 0.1vmin $red-color;
-      }
-    }
-
-    &-2 {
-      width: 20vmin;
-      height: 12vmin;
-      background: $red-shadow-color;
-      top: 25.5vmin;
-      left: 26.5vmin;
-      transform: rotate(-14deg);
-      border-radius: 0% 100% 100% 0% / 100% 30% 70% 0%;
-      box-shadow: 0 0 0 1.1vmin $outline-color,
-        inset -0.6vmin 0.8vmin 0 0.5vmin $red-color;
-    }
-  }
-
-  .body {
+.comb {
+  &-1 {
     z-index: 3;
-    width: 39.4vmin;
-    height: 45.3vmin;
-    background: $body-color;
-    top: 1.5vmin;
-    left: -10.7vmin;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    width: 10.2vmin;
+    height: 10vmin;
+    background: $red-shadow-color;
+    top: -48.5vmin;
+    left: -26vmin;
+    transform: rotate(-25deg);
+    border-radius: 60% 50% 0 0;
     box-shadow: 0 0 0 1vmin $outline-color,
-      inset -3.4vmin -2.3vmin 0 0.8vmin $body-shadow-color;
-  }
-
-  .wing {
-    z-index: 3;
-    width: 15.4vmin;
-    height: 11.6vmin;
-    background: $body-color;
-    top: 7.8vmin;
-    left: 7.5vmin;
-    transform: rotate(6deg) skewX(12deg) skewY(-5deg);
-    border-radius: 50% 50% 30% 70% / 0% 0% 100% 100%;
-    border: 1vmin solid $outline-color;
-    border-top: 0;
-    box-shadow: 1.3vmin 1.7vmin 0 1vmin $body-shadow-color;
+      inset 2.1vmin 1.3vmin 0 0.5vmin $red-color;
 
     &::before {
-      width: 1vmin;
-      height: 1vmin;
-      background: $outline-color;
-      top: -0.5vmin;
-      left: -1vmin;
-      border-radius: 50%;
-      box-shadow: 14.4vmin 0 0 0 $outline-color;
-    }
-  }
-
-  .eye-right {
-    z-index: 3;
-    width: 4.5vmin;
-    height: 4.5vmin;
-    background: $eye-color;
-    top: -17.8vmin;
-    left: -23.2vmin;
-    border-radius: 50%;
-  }
-
-  .eye-left {
-    z-index: 1;
-    width: 4vmin;
-    height: 4vmin;
-    background: $eye-color;
-    top: -20.3vmin;
-    left: -44.4vmin;
-    border-radius: 50%;
-  }
-
-  .beak {
-    z-index: 5;
-    width: 7.2vmin;
-    height: 4.2vmin;
-    background: $yellow-color;
-    top: -8.9vmin;
-    left: -42.4vmin;
-    border-radius: 4.2vmin 4.2vmin 0 0;
-    box-shadow: 0 0 0 1vmin $outline-color,
-      inset 1.2vmin 0.5vmin 0 -0.2vmin $body-color;
-  }
-
-  .beak-bottom {
-    z-index: 4;
-    width: 4.6vmin;
-    height: 4.6vmin;
-    background: $yellow-shadow-color;
-    top: -4.3vmin;
-    left: -40.3vmin;
-    border-radius: 50%;
-    box-shadow: -0.3vmin 0 0 1vmin $outline-color,
-      0.1vmin 0.1vmin 0 1vmin $outline-color;
-  }
-
-  .wattle {
-    z-index: 3;
-    width: 0;
-    height: 0;
-    border-left: 4.2vmin solid transparent;
-    border-right: 2.4vmin solid transparent;
-    border-bottom: 5.5vmin solid $outline-color;
-    left: -37vmin;
-    transform: rotate(20deg) skewX(-3deg);
-
-    &::before {
-      width: 4.8vmin;
-      height: 4.8vmin;
+      width: 3vmin;
+      height: 3vmin;
       background: $red-shadow-color;
-      top: 4.6vmin;
-      left: -3.3vmin;
-      border-radius: 50%;
-      box-shadow: 0.1vmin 0vmin 0 1.1vmin $outline-color,
-        -0.2vmin -0.1vmin 0 1vmin $outline-color,
-        inset 0.5vmin -0.55vmin 0 0.1vmin $red-color;
+      top: 6.7vmin;
+      left: 9vmin;
+      transform: rotate(35deg);
     }
 
     &::after {
-      width: 0;
-      height: 0;
-      border-left: 2vmin solid transparent;
-      border-right: 2.4vmin solid transparent;
-      border-bottom: 4vmin solid $red-shadow-color;
-      top: 2vmin;
-      left: -2.8vmin;
-      transform: skewX(-5deg) rotate(2deg);
+      width: 1.5vmin;
+      height: 1.6vmin;
+      background: $red-color;
+      top: 5.5vmin;
+      left: 10.3vmin;
+      transform: rotate(-25deg);
+      border-radius: 0 0 0 100%;
     }
   }
 
-  .foot-right {
+  &-2 {
+    z-index: 2;
+    width: 9.2vmin;
+    height: 7.5vmin;
+    background: $red-shadow-color;
+    top: -50vmin;
+    left: -6.5vmin;
+    border-radius: 5vmin 5vmin 0 0;
+    box-shadow: 0 0 0 1vmin $outline-color;
+    overflow: hidden;
+
+    &::before {
+      width: 2vmin;
+      height: 3.2vmin;
+      background: $red-color;
+      left: 1.3vmin;
+      transform: rotate(50deg);
+    }
+
+    &::after {
+      width: 2vmin;
+      height: 4vmin;
+      background: $red-color;
+      top: -1.8vmin;
+      left: 3.7vmin;
+      transform: rotate(70deg);
+    }
+  }
+
+  &-3 {
     z-index: 3;
-    width: 5.5vmin;
-    height: 9.8vmin;
-    background: $yellow-color;
-    top: 46vmin;
-    left: -4.4vmin;
-    border-radius: 3vmin;
+    width: 9vmin;
+    height: 10vmin;
+    background: $red-shadow-color;
+    top: -38vmin;
+    left: 8.8vmin;
+    border-radius: 5vmin 100% 0 0;
+    box-shadow: 0 0 0 1vmin $outline-color;
+
+    &::before {
+      width: 4vmin;
+      height: 4vmin;
+      background: $red-shadow-color;
+      top: -1.2vmin;
+      left: -2.35vmin;
+      transform: rotate(-5deg);
+      border-radius: 0 0.5vmin 0 0;
+    }
+  }
+}
+
+.tail {
+  &-1 {
+    z-index: 3;
+    width: 14vmin;
+    height: 7.5vmin;
+    background: $red-shadow-color;
+    top: 5.2vmin;
+    left: 36.4vmin;
+    border-radius: 0 3vmin 100% 0;
+    box-shadow: 0 0.1vmin 0 1.1vmin $outline-color,
+      inset -0.7vmin 1vmin 0 0.2vmin $red-color;
+
+    &::before {
+      width: 5vmin;
+      height: 2.5vmin;
+      background: $red-shadow-color;
+      top: 7.15vmin;
+      left: 3vmin;
+      transform: rotate(-5deg);
+    }
+
+    &::after {
+      width: 1.2vmin;
+      height: 1.2vmin;
+      background: $outline-color;
+      top: 7.1vmin;
+      left: 7.4vmin;
+      border-radius: 50%;
+      box-shadow: 0.5vmin -0.15vmin 0 0.01vmin $outline-color,
+        0.4vmin 0.9vmin 0 0.1vmin $red-color;
+    }
+  }
+
+  &-2 {
+    width: 20vmin;
+    height: 12vmin;
+    background: $red-shadow-color;
+    top: 25.5vmin;
+    left: 26.5vmin;
+    transform: rotate(-14deg);
+    border-radius: 0% 100% 100% 0% / 100% 30% 70% 0%;
     box-shadow: 0 0 0 1.1vmin $outline-color,
-      inset 0.9vmin 0 0 0.01vmin $body-color;
+      inset -0.6vmin 0.8vmin 0 0.5vmin $red-color;
   }
+}
 
-  .foot-left {
-    z-index: 1;
-    width: 5.5vmin;
-    height: 9.8vmin;
-    background: $yellow-shadow-color;
-    top: 43.6vmin;
-    left: -23.8vmin;
-    border-radius: 3vmin;
-    box-shadow: 0 0 0 1.1vmin $outline-color;
-  }
+.body {
+  z-index: 3;
+  width: 39.4vmin;
+  height: 45.3vmin;
+  background: $body-color;
+  top: 1.5vmin;
+  left: -10.7vmin;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  box-shadow: 0 0 0 1vmin $outline-color,
+    inset -3.4vmin -2.3vmin 0 0.8vmin $body-shadow-color;
+}
 
-  .shadow {
-    width: 42vmin;
-    height: 6vmin;
-    background: $chicken-shadow-color;
-    top: 54vmin;
+.wing {
+  z-index: 3;
+  width: 15.4vmin;
+  height: 11.6vmin;
+  background: $body-color;
+  top: 7.8vmin;
+  left: 7.5vmin;
+  transform: rotate(6deg) skewX(12deg) skewY(-5deg);
+  border-radius: 50% 50% 30% 70% / 0% 0% 100% 100%;
+  border: 1vmin solid $outline-color;
+  border-top: 0;
+  box-shadow: 1.3vmin 1.7vmin 0 1vmin $body-shadow-color;
+
+  &::before {
+    width: 1vmin;
+    height: 1vmin;
+    background: $outline-color;
+    top: -0.5vmin;
     left: -1vmin;
     border-radius: 50%;
+    box-shadow: 14.4vmin 0 0 0 $outline-color;
   }
+}
+
+.eye-right {
+  z-index: 3;
+  width: 4.5vmin;
+  height: 4.5vmin;
+  background: $eye-color;
+  top: -17.8vmin;
+  left: -23.2vmin;
+  border-radius: 50%;
+}
+
+.eye-left {
+  z-index: 1;
+  width: 4vmin;
+  height: 4vmin;
+  background: $eye-color;
+  top: -20.3vmin;
+  left: -44.4vmin;
+  border-radius: 50%;
+}
+
+.beak {
+  z-index: 5;
+  width: 7.2vmin;
+  height: 4.2vmin;
+  background: $yellow-color;
+  top: -8.9vmin;
+  left: -42.4vmin;
+  border-radius: 4.2vmin 4.2vmin 0 0;
+  box-shadow: 0 0 0 1vmin $outline-color,
+    inset 1.2vmin 0.5vmin 0 -0.2vmin $body-color;
+}
+
+.beak-bottom {
+  z-index: 4;
+  width: 4.6vmin;
+  height: 4.6vmin;
+  background: $yellow-shadow-color;
+  top: -4.3vmin;
+  left: -40.3vmin;
+  border-radius: 50%;
+  box-shadow: -0.3vmin 0 0 1vmin $outline-color,
+    0.1vmin 0.1vmin 0 1vmin $outline-color;
+}
+
+.wattle {
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 4.2vmin solid transparent;
+  border-right: 2.4vmin solid transparent;
+  border-bottom: 5.5vmin solid $outline-color;
+  left: -37vmin;
+  transform: rotate(20deg) skewX(-3deg);
+
+  &::before {
+    width: 4.8vmin;
+    height: 4.8vmin;
+    background: $red-shadow-color;
+    top: 4.6vmin;
+    left: -3.3vmin;
+    border-radius: 50%;
+    box-shadow: 0.1vmin 0vmin 0 1.1vmin $outline-color,
+      -0.2vmin -0.1vmin 0 1vmin $outline-color,
+      inset 0.5vmin -0.55vmin 0 0.1vmin $red-color;
+  }
+
+  &::after {
+    width: 0;
+    height: 0;
+    border-left: 2vmin solid transparent;
+    border-right: 2.4vmin solid transparent;
+    border-bottom: 4vmin solid $red-shadow-color;
+    top: 2vmin;
+    left: -2.8vmin;
+    transform: skewX(-5deg) rotate(2deg);
+  }
+}
+
+.foot-right {
+  z-index: 3;
+  width: 5.5vmin;
+  height: 9.8vmin;
+  background: $yellow-color;
+  top: 46vmin;
+  left: -4.4vmin;
+  border-radius: 3vmin;
+  box-shadow: 0 0 0 1.1vmin $outline-color,
+    inset 0.9vmin 0 0 0.01vmin $body-color;
+}
+
+.foot-left {
+  z-index: 1;
+  width: 5.5vmin;
+  height: 9.8vmin;
+  background: $yellow-shadow-color;
+  top: 43.6vmin;
+  left: -23.8vmin;
+  border-radius: 3vmin;
+  box-shadow: 0 0 0 1.1vmin $outline-color;
+}
+
+.shadow {
+  width: 42vmin;
+  height: 6vmin;
+  background: $chicken-shadow-color;
+  top: 54vmin;
+  left: -1vmin;
+  border-radius: 50%;
 }
